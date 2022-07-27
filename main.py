@@ -50,28 +50,6 @@ time.sleep(5)
 driver.switch_to.window(parentGUID)
 time.sleep(15)
 
-# # This is a single element.
-# save_button = driver.find_element(By.XPATH, "/html/body/div[6]/div[3]/div[3]/div[2]/div/section[2]/div/div/div[1]/div/div[1]/div/div[1]/div[1]/div[3]/div/button")
-# save_button.click()
-# time.sleep(20)
-
-# # This is elements.
-# # I don't understand how to click all save button in that page. I gave up.
-# save_buttons = driver.find_elements(By.CLASS_NAME, "jobs-save-button")
-# print(save_buttons)
-# change_jobs = driver.find_elements(By.CLASS_NAME, "job-card-container")
-# print(change_jobs)
-# # ↑ It worked these codes, but I don't know how to do after that.
-
-
-# for i in range(len(save_buttons)):
-#     print(save_buttons[i].text)
-#     save_buttons[i].click()
-#     time.sleep(10)
-#     change_jobs[i].click()
-#     time.sleep(10)
-# time.sleep(20)
-
 
 # Scrolls down job list pane to load all listings and then returns to the top
 job_list_scroll = driver.find_element(By.CLASS_NAME, "jobs-search__left-rail")
